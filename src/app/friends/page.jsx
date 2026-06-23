@@ -1,11 +1,7 @@
 import React from 'react'
 
-export default function Friendspage() {
+export default function page() {
   return (
-    <div>
-        <div>
-            <h3 className=''>Friends to keep close in your life</h3>
-        </div>
-    </div>
+    <div>page</div>
   )
 }
