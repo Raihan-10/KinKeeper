@@ -8,7 +8,7 @@ import twitter from '../app/assets/images/twitter.png'
 
 export default function Footer() {
     return (
-        <div className='bg-[#244D3F] py-10 px-20 md:py-20 md:px-[245]'>
+        <div className='bg-[#244D3F] lg:py-10 lg:px-20 md:py-20 md:px-[245]'>
             <div className='flex flex-col gap-4 justify-center items-center text-white max-w-7xl mx-auto'>
                 <Image src={logo} alt='logo' ></Image>
                 <p className='md:text-center'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
@@ -19,11 +19,11 @@ export default function Footer() {
                     <Image src={twitter} alt='twitter logo' ></Image>
 
                 </div>
-                <hr className='mx-auto max-w-7xl container mt-10 opacity-[0.2]' />
+                <hr className='mx-auto max-w-7xl container md:mt-10 opacity-[0.2]' />
                
 
             </div>
-             <div className='opacity-[0.2] flex justify-between mt-[30] cursor-pointer text-white'>
+             <div className='opacity-[0.2] md:px-10 flex justify-between md:mt-[30] cursor-pointer text-white'>
                     <p>© 2026 KeenKeeper. All rights reserved.</p>
                     <div className='flex gap-4 '>
                         <p >Privacy Policy                    </p>

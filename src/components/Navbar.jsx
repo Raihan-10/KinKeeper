@@ -13,11 +13,11 @@ export default function Navbar() {
 
                 <Image src={logo} alt="logo" width={141} ></Image>
                 <div className='flex items-center gap-1'>
-                    <button className='btn border-none flex items-center  gap-1  bg-[#244D3F] rounded-lg text-white'>
+                    <button className='btn shadow border-none flex items-center  gap-1  bg-[#244D3F] rounded-lg text-white'>
                         <MdOutlineHome/>Home</button>
-                    <button className='btn bg-white border-none text-[#64748B] flex items-center gap-1 rounded-lg'><RiTimeLine />
+                    <button className='btn shadow bg-white border-none text-[#64748B] flex items-center gap-1 rounded-lg'><RiTimeLine />
                         Timeline</button>
-                    <button className='btn bg-white text-[#747577] border-none flex items-center gap-1 rounded-lg'><IoIosStats />
+                    <button className='btn shadow bg-white text-[#747577] border-none flex items-center gap-1 rounded-lg'><IoIosStats />
                         Stats</button>
                 </div>
 
