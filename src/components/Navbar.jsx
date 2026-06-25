@@ -7,8 +7,8 @@ import { IoIosStats } from 'react-icons/io'
 
 export default function Navbar() {
     return (
-        <div className='max-w-400 bg-white py-4 shadow-2xl bg-red '>
-            <div className='flex justify-between md:mx-20'>
+        <div className=' bg-white py-4 shadow-2xl '>
+            <div className='flex  max-w-7xl mx-auto justify-between md:mx-20'>
 
 
                 <Image src={logo} alt="logo" width={141} ></Image>

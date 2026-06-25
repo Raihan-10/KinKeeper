@@ -8,8 +8,8 @@ import twitter from '../app/assets/images/twitter.png'
 
 export default function Footer() {
     return (
-        <div className='bg-[#244D3F] py-10 px-20 md:py-20 md:px-[245] max-w-400'>
-            <div className='flex flex-col gap-4 justify-center items-center text-white'>
+        <div className='bg-[#244D3F] py-10 px-20 md:py-20 md:px-[245]'>
+            <div className='flex flex-col gap-4 justify-center items-center text-white max-w-7xl mx-auto'>
                 <Image src={logo} alt='logo' ></Image>
                 <p className='md:text-center'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <p className='text-xl font-semibold mt-6'>Social Links</p>
