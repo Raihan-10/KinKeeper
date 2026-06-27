@@ -67,7 +67,7 @@ import QuickCheck from '@/components/QuickCheck';
                 <div className='bg-white p-6 shadow'>
                     <div className='flex justify-between items-center'>
                         <p className='text-xl font-medium text-[#244D3F]'>Relationship Goal</p>
-                        <button className='bg-[#F8FAFC] text-[14px] px-2 font-medium'><span className='text-[#1F2937]'>Edit</span> </button>
+                        <button className='btn bg-[#F8FAFC] text-[14px] font-medium'><span className='text-[#1F2937]'>Edit</span> </button>
                     </div>
                     <p className='text-[#64748B] text-lg'>Connect every
                         <span className='text-[#1F2937] font-bold'> 30 days</span></p>
