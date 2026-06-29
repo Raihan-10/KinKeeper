@@ -25,17 +25,16 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning
       lang="en" data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased font-sans`}
     >
       <body className="min-h-full flex flex-col">
 
         <Navbar />
         <TimelineContextProvider>
   
-        <main className="grow">
 
           {children}
-        </main>
+        
    
         </TimelineContextProvider>
         <Footer />
