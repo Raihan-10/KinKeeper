@@ -6,7 +6,7 @@ import Image from 'next/image';
 import callImage from '../../assets/images/call.png'
 import textImage from '../../assets/images/text.png'
 import videoImage from '../../assets/images/video.png'
-import { friends } from '../../data.json';
+import  friends  from '../../data.json';
 import QuickCheck from '@/components/QuickCheck';
 
 
