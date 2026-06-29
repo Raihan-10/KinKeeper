@@ -2,7 +2,7 @@ import React from 'react'
 import { FaPlus } from 'react-icons/fa'
 import Stats from './StatsCard'
 import Image from 'next/image';
-import friends from './data'
+import friends from './data.json'
 import Link from 'next/link';
 
 export default function Homepage() {
@@ -45,7 +45,7 @@ export default function Homepage() {
             friends.map((f, i) => {
               const currentStatus = status[f.status]
               return (
-                <Link href={`friends/${f.id}`} key={i} className='p-4 shadow-lg rounded-lg flex flex-col items-center justify-center gap-3 bg-white'>
+                <Link href={`/friends/${f.id}`} key={i} className='p-4 shadow-lg rounded-lg flex flex-col items-center justify-center gap-3 bg-white'>
                   
                   <Image src={f.picture} alt="friends pic" height={80} width={80}></Image>
                   <p className='text-[20px] font-semibold'>{f.name}</p>
