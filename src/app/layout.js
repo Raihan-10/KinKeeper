@@ -32,8 +32,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <TimelineContextProvider>
   
-        
+        <main className="grow">
+
           {children}
+        </main>
    
         </TimelineContextProvider>
         <Footer />
