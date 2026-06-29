@@ -6,7 +6,7 @@ import Image from 'next/image';
 import callImage from '../../assets/images/call.png'
 import textImage from '../../assets/images/text.png'
 import videoImage from '../../assets/images/video.png'
-import { friends } from '@/app/data';
+import { friends } from '../../data.json';
 import QuickCheck from '@/components/QuickCheck';
 
 
@@ -15,11 +15,6 @@ import QuickCheck from '@/components/QuickCheck';
     const { id } = await params;
     const friend = friends.find((f) => f.id === parseInt(id));
     const { name, picture, days_since_contact, email, bio, status, tags, goal, next_due_date } = friend
-    if (!friend) {
-        return (
-            <div>Friend not found</div>
-        )
-    }
 
     return (
         <div className='bg-[#F8FAFC] overflow-x-hidden'>
@@ -49,7 +44,7 @@ import QuickCheck from '@/components/QuickCheck';
             {/* right */}
             <div className='flex flex-col gap-6'>
                 {/* upper */}
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                     <div className='py-8 px-4 bg-white text-center shadow w-full'>
                         <h3 className='text-3xl font-semibold'>{days_since_contact}</h3>
                         <p>Days Since Contact</p>

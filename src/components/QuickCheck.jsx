@@ -7,13 +7,11 @@ import toast from 'react-hot-toast'
 
 
 export default function QuickCheck({ name, callImage, textImage, videoImage }) {
-    // const {name, callImage, textImage, videoImage}=friends
    const {addTimeline} =useTimeline();
    
     const toastButton=(type)=>{
         toast.success(`${type} with ${name}`)
 
-        // sending data to global context
         addTimeline({
             id:Date.now(), 
             type:type, name:name,
@@ -23,9 +21,9 @@ export default function QuickCheck({ name, callImage, textImage, videoImage }) {
 
    
     return (
-        <div className='bg-white p-6 shadow rounded-xl'>
+        <div className='bg-white p-6  shadow rounded-xl'>
             <p className='text-[#244D3F] text-xl font-medium mb-4'>Quick Check-In</p>
-            <div className='grid grid-cols-3 gap-4 '>
+            <div className='grid md:grid-cols-3 gap-4 '>
 
                 <button onClick={()=>toastButton('Call')} className='cursor-pointer shadow p-4 flex flex-col rounded-lg justify-center items-center gap-2 bg-[#F8FAFC]'>
                     <Image src={callImage} alt='call-image' width={32} height={32}></Image> Call</button>

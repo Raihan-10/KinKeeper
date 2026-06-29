@@ -5,7 +5,6 @@ import { RiArrowDropDownLine } from 'react-icons/ri'
 
 export default function Timeline() {
   const [filter, setFilter] = useState('all')
-// real time data from global context
 const {data} = useTimeline();
 
 // filtering
